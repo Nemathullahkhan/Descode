@@ -9,6 +9,7 @@ export default async function Page() {
   return (
     <div>
       <pre>{JSON.stringify(session, null, 2)}</pre>
+      <pre>{session?.user?.name}</pre>
       <SignOutButton />
     </div>
   );
