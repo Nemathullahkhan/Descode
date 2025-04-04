@@ -8,7 +8,7 @@ import { ChangeEvent, useRef, useState, useTransition } from "react";
 import { UploadImage } from "./upload-file";
 
 export default function BlobPage() {
-  const [imageUrls, setImageUrls] = useState<string[]>([]);
+const [imageUrls, setImageUrls] = useState<string[]>([]);
   const imageInputRef = useRef<HTMLInputElement>(null);
 
   const handleImageChange = (e: ChangeEvent<HTMLInputElement>) => {
